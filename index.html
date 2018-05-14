@@ -1,10 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Hi Naseem Ahmad</h1>
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!--Joseph Sans Font css -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+	<!--style css-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!--media css-->
+	<link href="css/media.css" rel="stylesheet" type="text/css">
+    <title>Lovrican</title>
+  </head>
+  <body>
+	<section class="banner-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col col-sm-6">
+					<div class="logo">
+						<h1>Lovrican</h1>
+						<p>Meet Exceptional African Professionals</p>
+					</div>
+				</div>
+				
+				<div class="col col-sm-6">
+					<div class="member-login float-right">
+						<button type="button" class="btn btn-member-login" data-toggle="modal" data-target="#MemberLoginModal">Member Login</button>
+					</div>
+				</div>
+			</div><!--row ends here-->
+			
+			<div class="row">
+				<div class="col col-sm-12 col-12 col-md-6 col-lg-6">
+					<div class="join-us-wrapper">
+						<div class="wrapper-heading">
+							<h1>Join <span>Free</span> Today</h1>
+						</div>
+						<div class="wrapper-content">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="" aria-describedby="ENterCityName" placeholder="My City">
+									<div class="invalid-feedback">Error Message</div>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="" aria-describedby="EnterEmail" placeholder="Email">
+									<div class="invalid-feedback">Error Message</div>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" id="" aria-describedby="CreatePassword" placeholder="Create Password">
+									<div class="invalid-feedback">Error Message</div>
+								</div>
+								<div class="form-group">
+									<select class="form-control" id="exampleFormControlSelect1">
+										<option>Where did you hear about us?</option>
+									</select>
+									<div class="invalid-feedback">Error Message</div>
+								</div>
+								<p>By clicking on the button below, I confirm that I have read the Terms of Service  and Privacy Policy</p>
+								<div class="form-group">
+									<button type="button" class="btn btn-block btn-submit hidden">Find My Matches</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!--row ends here-->
+		</div>
+	</section>
+	
+	<!--modal -->
+	<!-- Modal -->
+		<div class="modal fade" id="MemberLoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						
+						<div class="form-group">
+							<input type="email" class="form-control" id="" aria-describedby="EnterEmail" placeholder="Enter Your Email Address">
+							<div class="invalid-feedback">Error Message</div>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" id="" aria-describedby="CreatePassword" placeholder="Enter Your Password">
+							<div class="invalid-feedback">Error Message</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck">
+								<label class="form-check-label" for="gridCheck">Remember me</label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<button type="button" class="btn btn-block btn-login">Login</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		  </div>
+		</div>
+		
+		
+		
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
 </html>

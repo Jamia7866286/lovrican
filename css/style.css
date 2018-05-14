@@ -1,0 +1,3072 @@
+@import "http://propeller.in/components/range-slider/css/nouislider.min.css";
+@import "http://propeller.in/components/range-slider/css/range-slider.css";
+@import url("css/normalize.css");
+
+
+body
+{
+	font-family: 'Josefin Sans', sans-serif;
+	background:#d0d0d0;
+}
+
+@font-face {
+    font-family: 'NeoSansProBold';
+    src: url('../fonts/NeoSansProBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ml-auto, .mx-auto 
+{
+    margin-left: auto!important;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
+}
+
+.btn-member-login, .btn-login
+{
+	border-radius: 5px;
+	background-color: rgb(131, 53, 66);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	color:#fff;
+	font-size:16px;
+	padding:15px 35px;
+}
+
+.btn-user-logout
+{
+	border-radius: 5px;
+	background-color: rgb(131, 53, 66);
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+	color:#fff;
+	font-size:16px;
+	padding:10px 35px;
+	margin-bottom:10px;
+}
+
+.contine-btn 
+{
+    margin-top: 20px;
+}
+
+.contine-btn button.btn-continue
+{
+	border-radius: 5px;
+	background-color: #ffc000;
+	box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.24);
+	-webkit-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.24);
+	-moz-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.24);
+	padding:15px;
+	font-size:24px;
+	width:300px;
+}
+
+.contine-btn a.back-step
+{
+	margin-top:20px;
+	font-size:18px;
+}
+
+/* STAR RATING PROGRESS BAR */
+
+.ap-box
+{
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+	-webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+	-o-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+	padding:15px;
+	margin-bottom:15px;
+}
+
+.ap-box .ap-box-title h4
+{
+	margin-bottom:0;
+	font-size:18px;
+	color:#000;
+}
+
+.ap-box-rating > ul
+{
+	margin-bottom:0;
+}
+
+.ap-box-rating > ul > li .star
+{
+	width:31px;
+	height:31px;
+	border-radius: 50%;
+	background-image: -moz-linear-gradient( 90deg, rgb(242,244,247) 0%, rgb(254,255,255) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(242,244,247) 0%, rgb(254,255,255) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(242,244,247) 0%, rgb(254,255,255) 100%);
+	position:relative;
+}
+
+
+.ap-box-rating > ul > li
+{
+	margin-right:58px!important;
+	vertical-align:middle;
+	position:relative;
+}
+
+.ap-box-rating ul li::before
+{
+	content:'';
+	position:absolute;
+	height:12px;
+	left:-64px;
+	top:10px;
+	width:93px;
+	z-index:0;
+	background-color: rgb(223, 223, 223);
+	transition:color 0.25s ease;
+}
+
+.ap-box-rating ul li:first-child::before
+{
+	display:none;
+}
+
+.ap-box-rating ul li.active .star
+{
+	background:#ffc000;
+}
+
+.ap-box-rating ul li.active::before
+{
+	background:#ffc000;
+	transform-origin:left;
+	transition:all 0.2s ease-in-out;
+}
+
+/* CUstom Css All Pages Here */
+
+.banner-bg
+{
+	background-color: #e3e3e3;
+    background-image: url('../img/banner.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.uc-banner-bg
+{
+	background-color: #e3e3e3;
+}
+
+.uc-banner-bg .user-name h2
+{
+	font-size:28px;
+	color:#fff;
+	font-weight:900;
+	margin:26px 0;
+	font-family: 'NeoSansProBold', sans-serif;
+}
+
+.uc-content
+{
+	padding:220px 0;
+}
+
+.uc-content h1
+{
+	margin-top:0;
+}
+
+.logo {
+    width: 269px;
+    text-align: center;
+    background: #00cccc;
+    margin: 0 auto;
+	padding:10px 50px;
+}
+
+.logo h1
+{
+	font-size:46px;
+	color:#fff;
+	font-weight:900;
+	font-family: 'NeoSansProBold', sans-serif;
+}
+
+.logo p
+{
+	font-size:14px;
+	color:#000;
+	margin-bottom:0;
+	line-height:14px;
+	font-family: 'NeoSansProBold', sans-serif;
+}
+
+.member-login {
+    margin-top: 20px;
+}
+
+.join-us-wrapper
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	width:490px;
+	margin:36px auto 15px;
+	transition: all .2s easi-in-out;
+	-webkit-transition: all .2s easi-in-out;
+	-moz-transition: all .2s easi-in-out;
+	-ms-transition: all .2s easi-in-out;
+}
+
+.join-us-wrapper .wrapper-heading h1
+{
+	text-align:center;
+	padding:20px;
+	margin:0;
+	font-size:28px;
+	border-bottom:1px solid #e3e3e3;
+}
+
+.join-us-wrapper .wrapper-heading h1 span
+{
+	color:#be3c4f;
+	font-family: 'Arizonia', cursive;
+	font-size:28px;
+}
+
+.join-us-wrapper .wrapper-content
+{
+	padding:30px;
+}
+
+.form-group input::placeholder 
+{ 
+    color: #000;
+    opacity: 1;
+}
+
+.join-us-wrapper .wrapper-content .form-group
+{
+	margin-bottom:10px;
+}
+
+.join-us-wrapper .wrapper-content  p
+{
+	font-size:12px;
+	line-height:14px;
+	color:#999;
+}
+
+.join-us-wrapper .wrapper-content .form-group input, .join-us-wrapper .wrapper-content .form-group select
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	height:58px;
+	box-shadow:none;
+	color:#000;
+}
+
+#MemberLoginModal .modal-body .form-group input
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	height:58px;
+	box-shadow:none;
+	color:#000;
+}
+
+#MemberLoginModal .modal-body .form-group input.form-check-input
+{
+	height:auto;
+}
+
+#MemberLoginModal .modal-content .modal-header h5
+{
+	text-align:center;
+	width:100%;
+}
+
+
+.join-us-wrapper .wrapper-content .form-group button.btn-block.btn-submit
+{
+	border-radius: 5px;
+	background-color: rgb(0, 204, 204);
+	color:#000;
+	padding:10px;
+	font-size:24px;
+	font-weight:800;
+}
+
+/* Select Gender List Style */
+
+.select-gender ul li
+{
+	border-radius:3px;
+	
+}
+
+.select-gender ul li.woman.active
+{
+	background:#ffc000;
+}
+
+.select-gender ul li.man.active
+{
+	background:#31acc5;
+}
+
+.select-gender ul li a
+{
+	color:#000;
+	font-size:14px;
+	text-decoration:none;
+	padding:10px 30px;
+	display:block;
+	font-weight:500;
+}
+
+.select-gender ul li.woman
+{
+	border:1px solid #ffc000;
+}
+
+.select-gender ul li.man
+{
+	border:1px solid #31acc5;
+}
+
+
+/* Inner Content Css Here */
+
+
+.inner-content
+{
+	background:#d0d0d0;
+	padding:20px 0 20px;
+}
+
+.inner-content .logo-text h1
+{
+	color:#fff;
+	font-size:38px;
+	text-transform:uppercase;
+	font-weight:800;
+	margin-bottom:0;
+}
+
+.page-heading
+{
+	padding:0 0 20px;
+}
+
+.page-heading h1
+{
+	color:#000;
+	font-size:24px;
+}
+
+.step-progressbar ul.progressbar {
+    margin: 0;
+    padding: 0;
+    counter-reset: step;
+}
+
+.step-progressbar ul.progressbar li.active 
+{
+    color: #31acc5;
+}
+
+.step-progressbar ul.progressbar li 
+{
+    list-style-type: none;
+    width: 33.33%;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+	font-weight:600;
+}
+
+.step-progressbar ul.progressbar li:after 
+{
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #999;
+    top: 28px;
+    left: -50%;
+    z-index: -1;
+}
+
+.step-progressbar ul.progressbar li:before 
+{
+    width: 60px;
+    height: 60px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 60px;
+    border: 2px solid #fff;
+	background-color:#a5a5a5;
+    display: block;
+	color:#fff;
+	font-size:16px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+}
+
+.step-progressbar  ul.progressbar li.active:before {
+    border-color: #fff;
+	background:#31acc5;
+	color:#fff;
+}
+
+.step-progressbar  ul.progressbar li.active:after
+{
+	display:none;
+}
+
+.profile-content h2 {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.profile-content button.btn-about
+{
+	border-radius: 5px;
+	background-color: rgb(255, 192, 0);
+	box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.24);
+	-webkit-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.24);
+	-moz-box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.24);
+	padding:15px 40px;
+	font-size:18px;
+}
+
+
+
+/* Select Gander Page Css */
+.outer 
+{
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    border-radius:100%;
+    border: 1px solid #000;
+    vertical-align: middle;
+    display: inline-block;
+	margin-right:40px;
+	cursor:pointer;
+}
+
+.outer  span 
+{ 
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block; 
+}
+
+.outer .inner 
+{   
+    vertical-align: middle;
+    display: inline-block; 
+}
+
+.outer .inner  h3
+{
+	font-size:18px;
+	margin-bottom:0;
+	text-transform:uppercase;
+	font-weight:600;
+	color:#000;
+}
+
+.outer.man
+{
+	border:4px solid #31acc5;
+}
+
+.outer.man.active, .outer.woman.active
+{
+	background:#e3e3e3;
+}
+
+.outer.woman
+{
+	border:4px solid #ffc000;
+}
+
+
+/* Where Do You Live Page Css */
+
+.choose-country ul
+{
+	margin-bottom:0;
+}
+
+.choose-country ul li .form-group select, .choose-country ul li .form-group input
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	height:58px !important;
+	width:339px;
+	font-size:14px;
+	color:#000;
+}
+
+.custom-address ul li .form-group input
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	height:58px !important;
+	width:100%;
+	font-size:14px;
+	color:#000;
+}
+
+.custom-address ul li .form-group #map
+{
+	height:200px;
+}
+
+/* relationship-status page css */
+
+.relationship-status ul
+{
+	margin-bottom:0;
+}
+
+.relationship-status ul li .rs-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+.relationship-status ul li .rs-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* How Many Child Page Css */
+
+.how-many-child ul 
+{
+    margin-bottom: 0;
+}
+
+.how-many-child ul li .input-group .input-group-btn button.btn-number
+{
+	background:none;
+	border:1px solid #31acc5;
+}
+
+.how-many-child ul li .input-group .input-group-btn
+{
+	margin-right:20px;
+	margin-left:20px;
+}
+
+.how-many-child ul li .input-group input#quantity
+{
+	width:90px;
+	text-align:center;
+	border-top:0;
+	border-bottom:1px solid #999;
+	border-left:0;
+	border-right:0;
+	font-size:14px;
+	color:#000;
+}
+
+.how-many-child ul li .input-group input:focus
+{
+	box-shadow:none;
+}
+
+/* When were you born */
+
+.when-born ul
+{
+	margin-bottom:0;
+}
+
+.when-born ul li .form-group input
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 20px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+/* Highest Education */
+
+.highest-education ul
+{
+	width:800px;
+	margin:0 auto 0;
+}
+
+.highest-education ul li .he-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	margin-bottom:10px;
+	margin-right:10px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	width:250px;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+.highest-education ul li .he-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+.highest-education ul li.list-inline-item:not(:last-child)
+{
+	margin-right:0;
+}
+
+
+/* What You Do Page Css */
+
+.what-you-do ul
+{
+	margin-bottom:0;
+}
+
+.what-you-do ul li .form-group select
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	height:58px !important;
+	width:300px;
+	font-size:14px;
+	color:#000;
+}
+
+/* Which ethnic group do you belon page css */
+
+.ethnic-group ul
+{
+	width:1024px;
+	margin:0 auto 0;
+}
+
+.ethnic-group ul li .eg-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 10px;
+	margin-bottom:10px;
+	margin-right:10px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	text-align:center;
+	width:220px;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+.ethnic-group ul li .eg-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* What is your country of origin or cultural roots? */
+
+.cultural-roots ul
+{
+	margin-bottom:0;
+}
+
+.cultural-roots ul li .form-group select
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	height:58px !important;
+	width:300px;
+	font-size:14px;
+	color:#000;
+}
+
+/* Which languages do you speak? */
+
+.langugae-speak ul
+{
+	margin-bottom:0;
+}
+
+.langugae-speak ul li .form-group select
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	height:58px !important;
+	width:300px;
+	font-size:14px;
+	color:#000;
+}
+
+/* Which best describes your religion or spirituality?  */
+
+.your-religion ul
+{
+	margin-bottom:0;
+}
+
+.your-religion ul li .religion-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 10px;
+	margin-bottom:10px;
+	margin-right:0;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	text-align:center;
+	width:253px;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+.your-religion ul li .religion-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+/* What's your personal income? */
+
+.personal-income ul
+{
+	margin-bottom:0;
+}
+
+.personal-income ul li .form-group select
+{
+	border-width: 1px;
+	border-color: rgb(159, 159, 159);
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	height:58px !important;
+	width:300px;
+	font-size:14px;
+	color:#000;
+}
+
+/* Intereted in more children */
+
+.outer.yes, .outer.no, .outer.maybe
+{
+	border:4px solid #31acc5;
+}
+
+.outer.yes.active, .outer.no.active, .outer.maybe.active
+{
+	background:#e3e3e3;
+}
+
+/* How often do you drink?  */
+
+.often-drink ul
+{
+	margin-bottom:0;
+}
+
+.often-drink ul li .od-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 10px;
+	margin-bottom:10px;
+	margin-right:0;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	text-align:center;
+	width:200px;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+.often-drink ul li .od-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* How often do you smoke?  */
+
+.often-smoke ul
+{
+	margin-bottom:0;
+}
+
+.often-smoke ul li .os-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 10px;
+	margin-bottom:10px;
+	margin-right:0;
+	font-size:12px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	text-align:center;
+	width:200px;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+.often-smoke ul li .os-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* How tall are you? */
+
+.how-tall ul
+{
+	margin-bottom:0;
+}
+
+.how-tall ul li .form-group input
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 20px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+/* How well do these descriptions apply to your appearance? */
+
+
+
+
+/* Choose four qualities of your friend */
+.choose-qualities ul
+{
+	margin-bottom:0;
+}
+
+.choose-qualities ul li .cq-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.choose-qualities ul li .cq-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* I am interested in these hobbies… */
+
+.hobbies ul
+{
+	margin-bottom:0;
+}
+
+.hobbies ul li .hobbies-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	text-transform:uppercase;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.hobbies ul li .hobbies-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* I enjoy listening to page css */
+
+.listen-music ul
+{
+	margin-bottom:0;
+}
+
+.listen-music ul li .lm-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	text-transform:uppercase;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.listen-music ul li .lm-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* I Like Playing Page css */
+
+
+.like-playing ul
+{
+	margin-bottom:0;
+}
+
+.like-playing ul li .lp-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	text-transform:uppercase;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.like-playing ul li .lp-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* I like watching */
+
+.like-watching ul
+{
+	margin-bottom:0;
+}
+
+.like-watching ul li .lw-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	text-transform:uppercase;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.like-watching ul li .lw-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* i am passionate About page css */
+
+.passionate-about 
+{
+    width: 780px;
+    margin: 0 auto;
+}
+
+.passionate-about  ul li .form-group input
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:15px 20px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+
+/* When I have leisure time, I enjoy (doing) page Css */
+
+
+.leisure-time
+{
+    width: 780px;
+    margin: 0 auto;
+}
+
+.leisure-time  ul li .form-group input
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:15px 20px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+/* What three things are you most thankful for page css */
+
+
+.thankful-for
+{
+    width: 780px;
+    margin: 0 auto;
+}
+
+.thankful-for  ul li .form-group input
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:15px 20px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+/* I am looking for matches who are between the ages of page css */
+
+.between-age ul
+{
+	margin-bottom:0;
+}
+
+.between-age ul li .form-group input
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 20px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+}
+
+
+
+/* How important is the age of your match css */
+.match_age ul
+{
+	margin-bottom:0;
+}
+
+.match_age ul li .ma-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.match_age ul li .ma-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+/* You can match me with members who are... css */
+.match-member ul
+{
+	margin-bottom:0;
+}
+
+.match-member ul li .mm-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.match-member ul li .mm-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+
+/* It’s ok to match me with members who are...  css */
+.its_ok_match_member ul
+{
+	margin-bottom:0;
+}
+
+.its_ok_match_member ul li .its-ok-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.its_ok_match_member ul li .its-ok-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+
+/* How important is your match’s religion / spirituality css */
+.match-religion ul
+{
+	margin-bottom:0;
+}
+
+.match-religion ul li .mr-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.match-religion ul li .mr-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+
+/* How important is your match’s education css */
+.match-education ul
+{
+	margin-bottom:0;
+}
+
+.match-education ul li .med-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.match-education ul li .med-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+/* How important is your match’s income? css */
+.match-income ul
+{
+	margin-bottom:0;
+}
+
+.match-income ul li .mi-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.match-income ul li .mi-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+/* Are you open to meeting someone who already has children Css */
+
+.already-children .outer .inner  h3
+{
+	font-size:18px;
+	margin-bottom:0;
+	text-transform:uppercase;
+	font-weight:600;
+	color:#000;
+}
+
+.already-children .outer.man
+{
+	border:4px solid #31acc5;
+}
+
+.already-children .outer.man.active,.already-children .outer.woman.active
+{
+	background:#e3e3e3;
+}
+
+
+/* What level of drinking will you accept in your match? css */
+.drinkin-level ul
+{
+	margin-bottom:0;
+}
+
+.drinkin-level ul li .dl-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.drinkin-level ul li .dl-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+/* What level of smoking will you accept in your match? css */
+.smoking-level ul
+{
+	margin-bottom:0;
+}
+
+.smoking-level ul li .sm-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.smoking-level ul li .sm-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+/* How important is your match’s Cultural Background? css */
+.culture ul
+{
+	margin-bottom:0;
+}
+
+.culture ul li .cb-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.culture ul li .cb-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+
+/* I prefer matches with these cultural origins… css */
+.culture-origin ul
+{
+	margin-bottom:0;
+}
+
+.culture-origin ul li .co-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.culture-origin ul li .co-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+
+/* I prefer matches who speak these languages… css */
+.language_prefer ul
+{
+	margin-bottom:0;
+}
+
+.language_prefer ul li .lp-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.language_prefer ul li .lp-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+
+
+/* Select Gander Page Css */
+.search-match .outer 
+{
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    border-radius:100%;
+    border: 1px solid #000;
+    vertical-align: middle;
+    display: inline-block;
+	margin-right:40px;
+	cursor:pointer;
+}
+
+.search-match .outer  span 
+{ 
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block; 
+}
+
+.search-match .outer .inner 
+{   
+    vertical-align: middle;
+    display: inline-block; 
+}
+
+.search-match .outer .inner  h3
+{
+	font-size:15px;
+	margin-bottom:0;
+	text-transform:uppercase;
+	font-weight:600;
+	color:#000;
+}
+
+.search-match .outer.man
+{
+	border:4px solid #31acc5;
+}
+
+.search-match .outer.man.active,.search-match .outer.woman.active
+{
+	background:#e3e3e3;
+}
+
+.search-match .outer.woman
+{
+	border:4px solid #ffc000;
+}
+
+
+
+
+/* I prefer matches who live in these States… css */
+.state-match ul
+{
+	margin-bottom:0;
+}
+
+.state-match ul li .sm-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.state-match ul li .sm-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+
+
+/* I prefer matches who live in these Countries… css */
+.country-match ul
+{
+	margin-bottom:0;
+}
+
+.country-match ul li .cm-box
+{
+	border-width: 2px;
+	border-color: #31acc5;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	padding:10px 36px;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:600;
+	cursor:pointer;
+	transition:all .2s ease-in-out;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	margin-bottom:15px;
+}
+
+.country-match ul li .cm-box.active
+{
+	background:#31acc5;
+	color:#fff;
+}
+
+/* How well do the following statements apply to you? */
+
+.slider-wrap 
+{
+    width: 920px;
+    margin: 0 auto;
+	overflow:hidden;
+}
+
+.slider-wrap .slide-wrap-controls a.slider-wrap-prev  i, .slider-wrap .slide-wrap-controls a.slider-wrap-next  i
+{
+	height:38px;
+	width:38px;
+	background-color: rgb(255, 192, 0);
+	font-size:18px;
+	text-align:center;
+	color:#fff;
+	line-height:38px;
+	border-radius:100%;
+}
+
+.slider-wrap .slide-wrap-controls a.slider-wrap-next 
+{
+    right: -30px;
+	top:50%;
+    position: absolute;
+	z-index:999;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+.slider-wrap .slide-wrap-controls a.slider-wrap-prev 
+{
+    left: 10px;
+	top:50%;
+    position: absolute;
+	z-index:999;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+}
+
+/* Which picture describes you best? */
+
+
+.select_picture 
+{
+    width: 770px;
+    margin: 0 auto;
+}
+
+
+.select_picture ul
+{
+	margin-bottom:0;
+}
+
+.select_picture ul li .sp-box
+{
+	height:162px;
+	width:188px;
+	background:#888 url('../img/user-img2.png') no-repeat 100%/cover;
+	border-width: 2px;
+	border-color: rgb(49, 172, 197);
+	border-style: solid;
+	border-radius:5px;
+	cursor:pointer;
+	margin-bottom:10px;
+}
+
+/* Select Memebership page css here */
+
+.top-header
+{
+	background:#181818;
+	color:#fff;
+	position: relative;
+}
+
+.top-header .logo-text
+{
+	background:#00cccc;
+	padding:16px;
+	z-index: 10;
+}
+
+.top-header .logo-text a
+{
+	font-weight:800;
+	font-size:47px;
+	margin-bottom:0;
+	font-family: 'NeoSansProBold';
+}
+
+.top-header .navbar
+{
+	padding:0;
+}
+
+.top-header ul.navbar-nav li.icon
+{
+    border-left: 1px solid rgba(255,255,255,0.5);
+    position: relative;
+}
+
+ul.navbar-nav li 
+{
+    padding: 35px 20px 20px!important;
+	transition: all .2s ease;
+}
+
+/* .top-header ul.navbar-nav li input 
+{
+    visibility: hidden;
+    width: 0;
+    position:absolute;
+    height:67px;
+    top:0;
+    left:-100px;
+    z-index: 40;
+    transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+}
+
+.top-header ul.navbar-nav li.search-input:hover input
+{
+	visibility: visible;
+	position: absolute;
+	top:0;
+	left:0;
+	width:380px;
+	height:67px;
+	z-index: 40;
+
+} */
+
+.top-header .navbar-nav {
+    margin-top: -41px;
+}
+
+ul.navbar-nav li:hover > a,  ul.navbar-nav li:hover > i
+{
+	color:#ffc000!important;
+}
+
+.top-header ul.navbar-nav li a
+{
+	font-size:16px;
+	color:#fff;
+	padding:0;
+}
+
+.become-pm
+{
+	background: #ffc000;
+    padding: 6px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 5;
+}
+
+.pm-text h3
+{
+	font-size:14px;
+	color:#000;
+	margin-bottom:0;
+}
+
+.pricing-box 
+{
+    float: left;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-col-box .pricing-box
+{
+	width:33.33%;
+}
+
+/* Gold box css */
+
+.pricing-col-box .pb-gold
+{
+	border:1px solid #ffc000;
+	background:#dfdfdf;
+}
+
+.pricing-col-box .pb-gold .pricing-box-heading 
+{
+    background: #ffc000;
+    padding: 15px;
+}
+
+.pricing-col-box .pb-gold button.btn-default
+{
+	background:#ffc000;
+	color:#fff;
+	padding:10px 30px;
+	margin-bottom:10px;
+}
+
+.pricing-col-box .pb-gold .price-list ul 
+{
+    margin-bottom: 130px !important;
+}
+
+.pricing-col-box .pb-gold .total-month h3 i
+{
+	height:15px;
+	width:15px;
+	border-radius:100%;
+	line-height:15px;
+	color:#fff;
+	background:#ffc000;
+	text-align:center;
+	font-size:12px;
+}
+
+
+
+
+/* Platinum box css */
+
+.pricing-col-box .pb-platinum
+{
+	border:1px solid #413f3f;
+	background:#dfdfdf;
+}
+
+.pricing-col-box .pb-platinum .pricing-box-heading 
+{
+    background: #413f3f;
+    padding: 15px;
+}
+
+.pricing-col-box .pb-platinum button.btn-default
+{
+	background:#413f3f;
+	color:#fff;
+	padding:10px 30px;
+	margin-bottom:10px;
+}
+
+.pricing-col-box .pb-platinum .total-month h3 i
+{
+	height:15px;
+	width:15px;
+	border-radius:100%;
+	line-height:15px;
+	color:#fff;
+	background:#413f3f;
+	text-align:center;
+	font-size:12px;
+}
+
+/* Premium box css */
+
+.pricing-col-box .pb-diamond
+{
+	border:1px solid #00cccc;
+	background:#dfdfdf;
+}
+
+.pricing-col-box .pb-diamond .pricing-box-heading 
+{
+    background: #00cccc;
+    padding: 15px;
+}
+
+.pricing-col-box .pb-diamond button.btn-default
+{
+	background:#00cccc;
+	color:#fff;
+	padding:10px 30px;
+	margin-bottom:10px;
+}
+
+.pricing-col-box .pb-diamond .total-month h3 i
+{
+	height:15px;
+	width:15px;
+	border-radius:100%;
+	line-height:15px;
+	color:#fff;
+	background:#00cccc;
+	text-align:center;
+	font-size:12px;
+}
+
+
+
+.pricing-col-box .pricing-box-heading h1
+{
+	color:#fff;
+	font-size:20px;
+	margin-bottom:0;
+	text-transform:uppercase;
+}
+
+.pricing-col-box .pricing-box .total-month 
+{
+    padding: 20px;
+    border-bottom: 2px solid #999;
+    margin-bottom: 15px;
+}
+
+.pricing-col-box .pricing-box .total-month h3
+{
+	font-size:16px;
+	margin-bottom:0;
+}
+
+.pricing-col-box .pricing-box .price-list ul 
+{
+    margin-bottom: 0;
+	padding-left:90px;
+}
+
+.pricing-col-box .pricing-box .price-list ul li 
+{
+    margin-bottom: 15px;
+    margin-top: 15px;
+	text-align:left;
+}
+
+.total-pice-box 
+{
+    width: 200px;
+	border-radius:3px;
+    margin: 0 auto 10px;
+    background: #fff;
+    padding: 10px;
+	
+}
+
+.total-pice-box h2
+{
+	margin:0;
+	font-size:24px;
+	font-weight:700;
+}
+
+.member-fav h3 
+{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+/* Choose membership list design css */
+
+.choose-membership-list
+{
+	margin-bottom:20px;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.choose-membership-list ul
+{
+	margin-bottom:0;
+	position:relative;
+}
+
+.choose-membership-list ul li
+{
+	width:50%;
+	float:left;
+	position:relative;
+}
+
+.choose-membership-list ul li input[type=radio]{
+  position: absolute;
+  opacity:0;
+}
+
+.choose-membership-list ul li .check
+{
+	display: block;
+	position: absolute;
+	border: 5px solid #AAAAAA;
+	border-radius: 100%;
+	height: 25px;
+	width: 25px;
+	top: 22px;
+	left: 50%;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+	-moz-transition: border .25s linear;
+}
+
+.choose-membership-list ul li .check::before 
+{
+	display: block;
+	position: absolute;
+	content: '';
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	top: 0;
+	left: 0;
+	margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+.choose-membership-list ul li input[type=radio]:checked + .check 
+{
+  border: 5px solid #fff;
+  background:#fff;
+}
+
+.choose-membership-list ul li input[type=radio]:checked + .check::before{
+  background: #ffc000;
+}
+
+.choose-membership-list ul li input[type=radio]:checked + label{
+  color: #0DFF92;
+}
+
+.choose-membership-list ul::after
+{
+	content:'';
+	position:absolute;
+	top:29px;
+	height:12px;
+	background-color: rgb(223, 223, 223);
+	border-radius:5px;
+	width:100%;
+	left:0;
+	z-index:-1;
+}
+
+.choose-membership-list ul li .form-group 
+{
+    margin-bottom: 0;
+}
+
+.choose-membership-list ul li .form-group label 
+{
+    display: block;
+	color:#999;
+}
+
+.form-check-input:checked + .form-check-label {
+  color: #009688;
+}
+
+
+.payment_prefer{
+    padding: 50px 0;
+    background: #f2f2f2;
+}
+.payment_premium{   
+    background-color: #dfdfdf;
+    border:2px solid #000;
+}
+.payment_inner {
+    padding: 20px 30px;
+}
+.dolor_box{
+    height: 77px;
+    max-width: 287px;
+    background-color: #fff;
+    border:2px solid #c3c3c3;
+}
+.dolor_box p{
+    margin: 0;
+    text-align: center;
+    line-height: 77px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #000;
+}
+.heading-payment p{
+    font-size: 18px;
+    color: #000;
+}
+.heading-payment h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: inherit;
+    color: #000;
+}
+.member_list {
+    font-size: 18px;
+    color: #000;
+}
+ul.list-unstyled.member_list li i {
+    padding-right: 10px;
+}
+i.fa.fa-exclamation-circle.member-icon {
+    padding-left: 10px;
+    color: #929292;
+}
+ul.list-unstyled.member_list li {
+    font-size: 14px;
+	margin-bottom:10px;
+}
+.duration-month {
+    font-size: 21px;
+    color: #000;
+}
+.duration-month .border-bottom {
+    border-bottom: 1px solid #a6a6a6!important;
+}
+.duration-month p {
+    margin: 0;
+    padding: 10px 20px;
+}
+.debit_dolor{
+    font-size: 16px;
+}
+.payment_prefer-inner h1 {
+    font-size: 28px;
+    color: #000;
+}
+.payment_prefer-inner p {
+    font-size: 14px;
+    color: #a8a8a8;
+}
+.payment_prefer-inner {
+    padding-left: 30px;
+}
+.payment_prefer-inner i {
+    padding-right: 10px;
+    color: #413f3f;
+    font-size: 21px;
+}
+.payment_paypal .card .card-header.active .card-title {
+    color: #fff;
+}
+.payment_paypal .card-header {
+    cursor: pointer;
+    background-color: #e1e1e1;
+    position: relative;
+}
+.payment_paypal .card{
+    border-radius: 0;
+    border: 0;
+}
+.payment_paypal .card-header:first-child{
+    border-radius: 0;
+}
+.payment_paypal .card-header.active{
+        background-color: #2f2f2f;
+}
+.payment_paypal .card .card-header .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.steps-pay{
+    background-color: #19d1d1;
+    padding: 15px 28px;
+	margin-bottom:20px;
+}
+.steps-pay p{
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.custom_checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}   
+
+.custom_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom_checkbox .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+
+.custom_checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}   
+
+.custom_checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom_checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.continue-pay {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffc000;
+    border-radius: 0;
+    outline: none;
+    padding: 10px 71px;
+}
+.continue-pay.btn-warning:hover {
+    color: #fff;
+    background-color: #ffc000;
+    border-color: #ffc000;
+}
+.continue-pay.btn-warning:not(:disabled):not(.disabled):active{
+    color: #fff;
+    background-color: #ffc000;
+    border-color: #ffc000;
+}
+.continue-box.float-right i{
+    padding-right: 10px;
+    color: #413f3f;
+    font-size: 21px;
+}
+.continue-box.float-right p {
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 0;
+    color: #a8a8a8;
+    font-weight: bold;
+    font-size: 14px;
+}
+p.credit-text {
+    color: #2f2f2f;
+    font-size: 18px;
+}
+.payment_paypal .card .card-header .card-title i {
+    padding-right: 15px;
+    font-size: 25px;
+	position:relative;
+	top:2px;
+}
+.payment_paypal .card-header.collapsed .card-title i {
+    transform: rotate(270deg);
+    position: relative;
+    top: -6px;
+    left: -10px;
+    font-size: 25px;
+}
+.btn-group.custom_dropdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.card-details {
+    position: relative;
+}
+.btn-group.custom_dropdown .btn {
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+        border-left: 1px solid #ddd;
+}
+.input-group.ccv-no>.input-group-prepend>.input-group-text{
+    border-top-right-radius:.25rem;
+    border-bottom-right-radius:.25rem;
+}
+.ccv-no i.fa.fa-exclamation-circle.member-icon{
+    padding-left: 0;
+    color: #181818;
+}
+.expiry-date {
+    position: relative;
+    top: -39px;
+}
+
+ul.list-unstyled.last-date li:first-child {
+    width: 50%;
+}
+
+ul.list-unstyled.last-date li{
+    width: 25%;
+    float: left;
+}
+ul.list-unstyled.last-date li:first-child input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+ul.list-unstyled.last-date li select {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+ul.last-date .expiry-year{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+ul.last-date .expiry-year {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: 0;
+}
+.credit-card-info label{
+    font-size: 18px;
+    color: #000;
+	vertical-align:text-top;
+}
+.special-offer {
+    padding: 15px 30px;
+}
+.custom_checkbox .checkbox-new {
+    top: 2px !important;
+}
+ul.last-date input.form-control:focus, ul.last-date select.form-control:focus{
+    background-color: none;
+     box-shadow: none;
+    border-color: none;
+    outline: none;
+}
+
+
+
+
+/* Enjoying prefer  */
+.recovered{
+    padding: 40px 0;
+    background: url(../img/prefer-bg.png) no-repeat 100%/cover;
+}
+.recovered .find-img {
+    width: 260px;
+    height: 260px;
+    background-color: #fec518;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    margin: 0 auto;
+}
+
+.recovered .find-img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.find-content{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.find-content p{
+    font-size: 16px;
+}
+.find-content h3{
+    font-size: 40px;
+    margin: 40px 0;
+}
+.prefer_continue .btn{
+    border-radius: 5px;
+    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.24);
+    margin: 20px 0 0;
+    padding: 10px 90px;
+}
+/* End Enjoying prefer  */
+
+
+
+/*******   match-listing ***/
+.match-listing{
+	padding: 60px 0;
+	background-color: #ccc;
+}
+
+.match-search{
+	position: relative;
+}
+
+.match-search .my-search {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    font-size: 22px;
+    transform: translateY(-50%);
+}
+
+.match-search input {
+    border-radius: 0;
+    padding: 12px 20px 12px 46px;
+    background: #fff;
+}
+
+.match-search ::-webkit-input-placeholder{
+	color: #989898;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.match-search .pagination {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    border-radius: 0;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.img-user span:first-child {
+    font-size: 20px;
+}
+
+.match-search .page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.match-search .pagination .page-link {
+    padding: 0 .5rem;
+    color: #007bff;
+    border: 0;
+}
+
+.match-search .pagination .page-link:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.match-search .page-link i {
+    color: #000;
+}
+
+.match-search .page-link:focus {
+    box-shadow: none;
+}
+
+.select-list {
+    margin: 10px 0 0;
+    padding: 5px 0 5px 15px;
+    background: #fff;
+}
+
+.select-list p{
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+}
+
+.select-list li.active a {
+    color: #ffc000;
+    text-decoration: none;
+}
+
+.select-list li i {
+    padding-right: 21px;
+    font-size: 20px;
+}
+
+.select-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.select-list .custom_checkbox .checkmark {
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #6d6c6c;
+    border-radius: 3px;
+}
+
+.select-list .reset-filter a{
+	color: #ffc000;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+p.reset-filter {
+    text-align: center;
+}
+
+.user-list.select-list {
+    margin: 10px 0 10px;
+    padding: 0;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.22);
+
+}
+
+.user-list.select-list .media h5 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 25px !important;
+}
+
+.row.user-info p i {
+    font-size: 24px;
+}
+
+
+.send-message .btn i {
+    padding-right: 13px;
+}
+
+.send-message .btn, .btn-light:not(:disabled):not(.disabled):active {
+    background: #ffc000;
+    color: #fff;
+    font-size: 11.89px;
+    font-weight: bold;
+    padding: 10px 13px;
+    border-color: #ffc000;
+}
+
+.user-list.select-list .media img.mr-3 {
+    margin-right: 40px !important;
+}
+.user-list.select-list > .media {
+    position: relative;
+}
+.img-user {
+    position: absolute;
+    color: #ffc000;
+    top: 10px;
+    left: 20px;
+}
+
+.img-user .position-relative {
+    left: 153px;
+    top: -25px;
+}
+
+.img-user .position-relative i {
+    color: #fff;
+    font-size: 37px;
+}
+
+.img-user .position-relative span {
+    left: 9px;
+    top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.user-comment .smily-comment {
+    display: flex;
+    margin-top: 10px;
+}
+
+.smily-comment span,.layer .smily-comment span {
+    width: 40px;
+    height: 40px;
+    background: #ffc000;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    margin-right: 10px;
+}
+
+.smily-comment i {
+    margin: auto;
+    color: #fff;
+    font-size: 17px;
+}
+.send-message .smily-comment{
+	display: flex;
+	margin-top: 10px;
+}
+
+
+.card.group-list .card-title {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+
+.card.group-list {
+    margin: 10px auto;
+    border: 0;
+}
+
+.card.group-list .card-img-top {
+    background: url(../img/user1.png) no-repeat 100%/cover;
+    height: 156px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.card.group-list .card-img-top span {
+    position: absolute;
+    color: #ffc000;
+    top: 10px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.card.group-list .card-img-top span.position-relative {
+    top: 10px;
+    left: 84%;
+}
+
+.card.group-list .card-img-top i {
+    color: #fff;
+    font-size: 37px;
+}
+
+.card.group-list .card-img-top i + span {
+    left: 9px;
+    top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/********* Range slider  **********/
+.pmd-range-slider .noUi-handle {
+    width: 25px;
+    height: 25px;
+    top: -13px;
+    background: #ffc000;
+    border: 5px solid #fff;
+     box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.41);
+}
+
+.pmd-range-slider .noUi-connect {
+    background: #f7ba00;
+}
+
+.pmd-range-slider.noUi-background, .pmd-range-slider .noUi-background {
+    background: #ffecb2;
+}
+
+.noUi-connect {
+     box-shadow: none;
+}
+
+.pmd-range-slider .noUi-tooltip {
+    left:0;
+    width: 45px;
+    height: 22px;
+    background: #ffc000;
+    color: #ffffff;
+    line-height: 22px;
+    border-radius: 0
+    font-size: 11px;
+    border-radius: 0 0 4px 4px!important;
+    font-weight: bold;
+    font-size: 14px;
+}
+.pmd-range-slider.pmd-range-tooltip-bottom.noUi-horizontal .noUi-handle-upper .noUi-tooltip:before, .pmd-range-slider.pmd-range-tooltip-bottom.noUi-horizontal .noUi-handle-lower .noUi-tooltip:before {
+    bottom: 22px;
+    border-radius: 0;
+}
+.pmd-range-slider.pmd-range-tooltip-bottom.noUi-horizontal .noUi-handle-upper .noUi-tooltip, .pmd-range-slider.pmd-range-tooltip-bottom.noUi-horizontal .noUi-handle-lower .noUi-tooltip {
+    bottom: -51px;
+}
+.age-range,.height-range,.distance-range {
+    padding: 0 1.5rem 70px 10px;
+}
+
+.pmd-range-slider.noUi-horizontal .noUi-handle-upper .noUi-tooltip:before, .pmd-range-slider.noUi-horizontal .noUi-handle-lower .noUi-tooltip:before {
+    width: 0;
+    height: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 11px solid #ffc000;
+    left:10px;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+    background:none;
+}
+
+.pmd-range-slider.noUi-target {
+    margin: 20px 0 12px;
+}
+
+.pmd-range-slider.noUi-connect {
+    background: #ffc000;
+}
+/*******   End match-listing ***/
+
+
+
+
+/****** User profile ******/
+.user_profile{
+	padding: 40px 0;
+	background: url(../img/cover-user.png) no-repeat 100%/cover;
+	background-position: top right;
+	position: relative;
+}
+
+.user_profile .layer {
+    position: absolute;
+    content: "";
+    padding: 25px 30px;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    left: 0;
+    bottom: 0;
+}
+
+.user_profile .smily-comment i {
+    margin-right: 15px;
+    margin: auto;
+    color: #fff;
+    font-size: 20px;
+}
+.layer .smily-comment {
+    display: flex;
+}
+
+.user_profile .card.group-list .card-img-top {
+    /* background: url(../img/user-img.png) no-repeat 100%/cover; */
+    position: relative;
+}
+.user_profile .card.group-list .card-img-top span.position-relative {
+    left: 77%;
+}
+
+.position-absolute.user-title {
+    bottom: 48px;
+}
+
+.position-absolute.user-title span:last-child {
+    left: 201px;
+}
+.position-absolute.user-title span:last-child i {
+    font-size: 20px;
+}
+
+span.img-5 {
+    left: 44px !important;
+    top: 20px !important;
+    color: #fff !important;
+    font-size: 13px !important;
+}
+
+.position-absolute.user-title span:first-child {
+    color: #fff;
+    font-size: 16px;
+}
+
+.user-img .card.group-list {
+    position: relative;
+    bottom: -50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 10;
+}
+
+.user-img .card.group-list .card-body {
+    padding: 1.25rem 1.25rem 0;
+}
+
+/****** End User profile ******/
+
+/*********** User gallery Tab *********/
+.tab-user .tabs-wrapper {
+    position: relative;
+    background: #262626;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -moz-justify-content: space-around;
+}
+
+.tab-user {
+    width: 82.6%;
+    margin: 0 auto;
+}
+
+.tab-user a.nav-link.waves-light.active {
+    background: #000;
+    border-color:#ffc000;
+    transition: all .4s ease-in;
+}
+.tab-user  a.nav-link.waves-light{
+	color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 4px solid;
+ }
+
+ .tab-user .tabs-wrapper .nav {
+    width: 100%;
+}
+
+ .tab-user .tabs-wrapper .nav-item {
+    width: 33.33%;
+}
+
+.tab-user .tab-pane.active.show h2 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 25px 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #bfbfbf;
+}
+ .tab-user .card{
+ 	padding: 0 40px;
+ 	border: none;
+ }
+
+  .tab-user .user-img1 {
+    margin-bottom: 15px;
+}
+/*********** End User gallery Tab *********/
+
+
+
+/*********** User Profile Tab *********/
+.user-img1 p i {
+    margin-right: 20px;
+}
+
+/*********** End User Profile Tab *********/
+/*Which of your qualities do you appreciate the most?*/
+.cultural-roots.qualities textarea {
+    resize: none;
+}
+/* End Which of your qualities do you appreciate the most?*/
+
+
+/*Are there certain things that you can't stand? */
+.cultural-roots ul li .form-group input{
+	border-width: 1px;
+    border-color: rgb(159, 159, 159);
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    height: 58px !important;
+    width: 300px;
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+.alisa {
+    position: relative;
+}
+span.hii {
+    position: absolute;
+    right: 95px;
+    top: 13px;
+}
+.heart {
+    position: relative;
+}
+.heart i {
+    color: #fff;
+    font-size: 37px;
+}
+.heart span {
+    left: 9px;
+    top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffc000;
+}
+.row.user-info p {
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+.row.user-info p i.fa-map-marker {
+    font-size: 33px;
+    margin-top: -4px;
+}
+
+
+
+.page-content {
+    background: #fff;
+    padding: 20px 20px;
+    min-height: 400px;
+    width: 100%;
+    display: table;
+}
+
+.page-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.user-images.float-right {
+    position: relative;
+    right: 20px;
+    top: 10px;
+}
+.user-title {
+    position: relative;
+    bottom: -50px;
+}
+
+.loader {
+    position: relative;
+}
+.loader:before{
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,.5);
+	z-index: 99;
+}
+.loader > img {
+    position: absolute;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}

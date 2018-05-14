@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Bootstrap 4 Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="css/media.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!--  match-listing   -->
+        <div class="match-listing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="match-search">
+                            <i class="fa fa-search my-search"></i>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <i class="fa fa-th-large" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <i class="fa fa-list-ul" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="select-list">
+                            <p>Select a list </p>
+                            <ul class="list-unstyled">
+                                <li class="active"><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i>Notifications<span class="float-right pr-4">10</span></a></li>
+                                <li class="mb-0"><i class="fa fa-search my-search"></i>Visitors</li>
+                            </ul>
+                        </div>
+                        <div class="select-list">
+                            <p>Filter</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-certificate" aria-hidden="true"></i></i>New
+                                    <span class="float-right pr-4">
+                                        <label class="custom_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+                                    </span>
+                                </li>
+                                <li><i class="fa fa-picture-o" aria-hidden="true"></i>Photo
+                                    <span class="float-right pr-4">
+                                        <label class="custom_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+                                    </span>
+                                </li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i>In contact
+                                    <span class="float-right pr-4">
+                                        <label class="custom_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+                                    </span>
+                                </li>
+                                <li><i class="fa fa-heartbeat" aria-hidden="true"></i>Similarities
+                                    <span class="float-right pr-4">
+                                        <label class="custom_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+                                    </span>
+                                </li>
+                                <li class="mb-0"><i class="fa fa-star" aria-hidden="true"></i>Favorites
+                                    <span class="float-right pr-4">
+                                        <label class="custom_checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="age-range">
+                                <p>Age</p>
+                                <!--Range slider with visible tootlip at bottom -->
+                                <div id="pmd-slider-range-tooltip-bottom" class="pmd-range-slider pmd-range-tooltip pmd-range-tooltip-bottom"></div>
+                            </div>
+                            <div class="height-range">
+                                <p>Height</p>
+                                <div id="pmd-slider-range-tooltip-bottom-height" class="pmd-range-slider pmd-range-tooltip pmd-range-tooltip-bottom"></div>
+                            </div>
+                            <div class="distance-range">
+                                <p>Distance in miles</p>
+                                <!-- Single Handler Slider with bottom tooltip -->
+                                <div id="pmd-range-tooltip-bottom" class="pmd-range-slider pmd-range-tooltip pmd-range-tooltip-bottom"></div>
+                            </div>
+                            <p class="reset-filter"><a href="#">Reset filter</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="user-list select-list">
+                            <div class="media">
+                                <div class="alisa">
+                                    <img class="mr-3 img-fluid" src="img/user1.png" alt="Generic placeholder image">
+                                    <div class="img-user">
+                                        <span>New</span>
+                                    </div>
+                                    <span class="hii">
+                                        <div class="heart">
+                                             <i class="fa fa-heart position-absolute" aria-hidden="true"></i>
+                                            <span class="position-absolute">83</span>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0">Alisa,39</h5>
+                                    <div class="user-comment row">
+                                        <div class="col-md-12 col-lg-7">
+                                            <div class="row user-info">
+                                                <div class="col-md-2 col-2">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i></p>
+                                                    <p> <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                                                </div>
+                                                <div class="col-md-10 col-10">
+                                                    <P> Investment Manager</P>
+                                                    <P>Hackensack</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-5">
+                                            <div class="send-message">
+                                                <button type="button" class="btn btn-light"><i class="fa fa-envelope" aria-hidden="true"></i>Send Message</button>
+                                            </div>
+                                            <div class="smily-comment">
+                                                <span><i class="fa fa-smile-o" aria-hidden="true"></i></span>
+                                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card group-list">
+                                    <!-- <img class="card-img-top" src="img/user1.png" alt="Card image cap"> -->
+                                    <div class="card-img-top">
+                                        <span>New</span>
+                                        <span class="position-relative">
+                                            <i class="fa fa-heart position-absolute" aria-hidden="true"></i>
+                                            <span class="position-absolute">83</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alisa,39</h5>
+                                        <div class="row user-info">
+                                            <div class="col-md-2 col-2">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i></p>
+                                                <p> <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                                            </div>
+                                            <div class="col-md-10 col-10">
+                                                <p> Investment Manager</p>
+                                                <p>Hackensack</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="send-message">
+                                                    <button type="button" class="btn btn-light"><i class="fa fa-envelope" aria-hidden="true"></i>Send Message</button>
+                                                    <div class="smily-comment">
+                                                        <span><i class="fa fa-smile-o" aria-hidden="true"></i></span>
+                                                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card group-list">
+                                    <!-- <img class="card-img-top" src="img/user1.png" alt="Card image cap"> -->
+                                    <div class="card-img-top">
+                                        <span>New</span>
+                                        <span class="position-relative">
+                                            <i class="fa fa-heart position-absolute" aria-hidden="true"></i>
+                                            <span class="position-absolute">83</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alisa,39</h5>
+                                        <div class="row user-info">
+                                            <div class="col-md-2 col-2">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i></p>
+                                                <p> <i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                                            </div>
+                                            <div class="col-md-10 col-10">
+                                                <p> Investment Manager</p>
+                                                <p>Hackensack</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="send-message">
+                                                    <button type="button" class="btn btn-light"><i class="fa fa-envelope" aria-hidden="true"></i>Send Message</button>
+                                                    <div class="smily-comment">
+                                                        <span><i class="fa fa-smile-o" aria-hidden="true"></i></span>
+                                                        <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End match-listing  -->
+        <!-- Slider js -->
+        <script src="http://propeller.in/components/range-slider/js/wNumb.js"></script>
+        <script src="http://propeller.in/components/range-slider/js/nouislider.js"></script>
+        <script>
+        // multiple range slider with default tooltip open
+        var pmdSliderRangeTooltipBottom = document.getElementById('pmd-slider-range-tooltip-bottom');
+        noUiSlider.create(pmdSliderRangeTooltipBottom, {
+            start: [10, 60],
+            connect: true,
+            tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+        var pmdSliderRangeTooltipBottomheight = document.getElementById('pmd-slider-range-tooltip-bottom-height');
+        noUiSlider.create(pmdSliderRangeTooltipBottomheight, {
+            start: [3, 30],
+            connect: true,
+            tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+        // single handler slider with bottom tooltip open
+        var pmdVerSliderTooltipBottom = document.getElementById('pmd-range-tooltip-bottom');
+        noUiSlider.create(pmdVerSliderTooltipBottom, {
+            start: [50],
+            connect: 'lower',
+            tooltips: [wNumb({ decimals: 0 })],
+            range: {
+                'min': [0],
+                'max': [100]
+            }
+        });
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,658 @@
+.contine-btn button.btn-continue {
+    display: block !important;
+    margin: 0 auto 20px !important;
+}
+
+.top-header .bg-dark {
+    background-color: #181818 !important;
+}
+
+.top-header .logo-text .navbar-brand {
+    margin-right: 0;
+}
+
+section.top-header .head {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.top-header .logo-text h1 {
+    margin-bottom: 0;
+}
+
+
+@media (max-width:767px) and (min-width:240px) {
+    .join-us-wrapper {
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+    }
+    .member-login {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .top-header .logo-text {
+        position: relative;
+    }
+    .choose-membership-list ul li .form-group label {
+        font-size: 12px;
+    }
+    .step-progressbar ul.progressbar li,
+    .step-progressbar ul.progressbar li {
+        font-size: 12px;
+    }
+    .profile-content button.btn-about {
+        padding: .375rem .75rem;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .outer,
+    .search-match .outer {
+        margin: 0 auto 10px;
+    }
+    .choose-country ul li {
+        width: 100%;
+    }
+    .choose-country ul li .form-group select,
+    .choose-country ul li .form-group input {
+        width: 100%;
+    }
+    .custom-address ul li .form-group #map {
+        height: 0;
+    }
+
+    .page-content .relationship-status ul li {
+        margin-bottom: 10px;
+    }
+    .how-many-child ul li .input-group .input-group-btn {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .how-many-child ul li .input-group input#quantity {
+        width: 70px;
+    }
+    .highest-education ul {
+        width: 100%;
+    }
+    .what-you-do ul li .form-group select {
+        width: 100%;
+    }
+    .ethnic-group ul {
+        width: 100%;
+        text-align: center;
+    }
+    .your-religion ul li .religion-box,
+    .your-religion ul li,
+    .personal-income ul li .form-group select,
+    .passionate-about,
+    .leisure-time,
+    .thankful-for {
+        width: 100%;
+    }
+
+    .ap-box-rating>ul>li {
+        margin-right: 14px!important;
+    }
+    .ap-box-rating>ul>li .star {
+        width: 15px;
+        height: 15px;
+    }
+    .ap-box-rating ul li::before {
+        height: 7px;
+        left: -21px;
+        top: 4px;
+        width: 30px;
+    }
+    .page-content {
+        padding: 20px 5px;
+    }
+    .page-heading h1 {
+        color: #000;
+        font-size: 20px;
+    }
+    .ap-box {
+        padding: 20px 10px;
+    }
+    .ap-box-rating>ul {
+        text-align: center;
+    }
+    .slider-wrap {
+        width: 100%;
+    }
+    .slider-wrap .slide-wrap-controls a.slider-wrap-next {
+        right: -72px;
+    }
+    .slider-wrap .slide-wrap-controls a.slider-wrap-prev {
+        left: -36px;
+    }
+    .ap-box .ap-box-title h4 {
+        font-size: 15px;
+    }
+    .slider-wrap .slide-wrap-controls a.slider-wrap-prev {
+        left: 42%;
+        bottom: -32px;
+        top: initial;
+        transform: translateX(-43%);
+        -webkit-transform: translateX(-43%);
+        -moz-transform: translateX(-43%);
+        position: initial;
+    }
+    .slider-wrap .slide-wrap-controls a.slider-wrap-next {
+        right: 32%;
+        bottom: -32px;
+        top: initial;
+        transform: translateX(-35%);
+        -webkit-transform: translateX(-35%);
+        -moz-transform: translateX(-35%);
+        position: initial;
+    }
+    .slider-wrap .slide-wrap-controls {
+        text-align: center;
+    }
+    .select_picture {
+        text-align: center;
+        width: 100%;
+    }
+    .pricing-col-box .pricing-box {
+        width: 100%;
+    }
+    .pricing-col-box .pricing-box .price-list ul {
+        padding-left: 0;
+    }
+    .pricing-col-box .pricing-box .price-list ul li {
+        text-align: center;
+    }
+    .top-header .logo-text h1 {
+        text-align: center;
+    }
+    .choose-membership-list ul::after {
+        top: 47px;
+    }
+    .choose-membership-list ul li .check {
+        top: 40px;
+        transform: translateX(-50%);
+    }
+    .choose-membership-list {
+        margin-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .become-pm {
+        position: relative;
+    }
+    .top-header .navbar-nav {
+        margin-top: 0;
+    }
+    ul.navbar-nav li {
+        padding: 15px;
+    }
+    .top-header ul.navbar-nav li.icon {
+        border-left: 0;
+    }
+    .top-header .bg-dark {
+        padding: 0 15px;
+    }
+    .payment_prefer-inner h1 {
+        font-size: 20px;
+    }
+    .payment_prefer-inner p {
+        font-size: 13px;
+    }
+    .steps-pay {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .steps-pay p {
+        font-size: 15px;
+    }
+    .custom_checkbox .checkmark {
+        top: -3px !important;
+    }
+    .custom_checkbox {
+        padding-left: 28px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .continue-box.float-right p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .special-offer p {
+        text-align: justify;
+    }
+    .card-details .btn-group.custom_dropdown .dropdown-menu.show {
+        left: -45px !important;
+    }
+    .payment_paypal .card-body {
+        padding: 10px;
+    }
+    .credit-card-info label {
+        font-size: 13px;
+    }
+    ul.list-unstyled.last-date li:first-child {
+        width: 43%;
+    }
+    ul.list-unstyled.last-date li {
+        width: 28%;
+    }
+    ul.list-unstyled.last-date li select {
+        padding: 4px;
+    }
+    form.credit-card-info ::-webkit-input-placeholder {
+        font-size: 13px;
+    }
+    .payment_inner {
+        padding: 20px 10px;
+    }
+    .dolor_box p {
+        font-size: 25px;
+    }
+    ul.list-unstyled.member_list li {
+        font-size: 13px;
+    }
+    .duration-month p {
+        padding: 10px 0px;
+    }
+    .dolor_box {
+        margin: 0 auto;
+    }
+    .heading-payment,
+    .member_list,
+    .duration-month {
+        text-align: center;
+    }
+    .recovered .find-img {
+        width: 215px;
+        height: 215px;
+        border: 7px solid #fff;
+    }
+    .find-match {
+        margin-bottom: 20px;
+    }
+    .find-content h3 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .find-content p {
+        font-size: 14px;
+    }
+
+
+    .user-list.select-list .media {
+        flex-direction: column;
+    }
+    .user-list.select-list .media img.mr-3 {
+        margin-right: 0!important;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .user-list.select-list .media .media-body {
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    .alisa {
+        width: 100%;
+    }
+    span.hii {
+        position: absolute;
+        right: 53px;
+        top: 13px;
+    }
+
+
+    .user_profile .layer {
+        position: relative;
+    }
+    .send-message.float-right {
+        float: initial !important;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+
+    .tab-user .card {
+        padding: 0 15px;
+    }
+    .tab-user .tab-pane.active.show h2 {
+        font-size: 22px;
+    }
+    .join-us-wrapper .wrapper-content {
+        padding: 30px 15px;
+    }
+    .banner-bg {
+        background-size: initial;
+    }
+}
+
+
+
+/* End @media (max-width:767px) and (min-width:240px) */
+
+@media (max-width:991px) and (min-width:768px) {
+    .select_picture {
+        text-align: center;
+        width: 100%;
+    }
+    .outer,
+    .search-match .outer {
+        margin: 0 auto 10px;
+    }
+    .recovered .find-img {
+        width: 200px;
+        height: 200px;
+    }
+    .recovered .find-img img {
+        width: 94px;
+    }
+    .choose-country ul li {
+        width: 100%;
+    }
+    .choose-country ul li .form-group select,
+    .choose-country ul li .form-group input {
+        width: 100%;
+    }
+    .custom-address ul li .form-group #map {
+        height: 0;
+    }
+    .page-content .relationship-status ul li {
+        margin-bottom: 10px;
+    }
+    .highest-education ul,
+    .passionate-about {
+        width: 100%;
+    }
+    .what-you-do ul li .form-group select,
+    .leisure-time,
+    .thankful-for {
+        width: 100%;
+    }
+    .ethnic-group ul {
+        width: 100%;
+        text-align: center;
+    }
+    .your-religion ul {
+        text-align: center;
+    }
+    .ap-box-rating>ul>li {
+        margin-right: 28px!important;
+    }
+    .ap-box-rating>ul>li .star {
+        width: 20px;
+        height: 20px;
+    }
+    .ap-box-rating ul li::before {
+        height: 8px;
+        left: -34px;
+        top: 6px;
+        width: 42px;
+    }
+    .page-content {
+        padding: 20px 25px;
+    }
+    .page-heading h1 {
+        color: #000;
+        font-size: 20px;
+    }
+    .ap-box {
+        padding: 20px 10px;
+    }
+    .slider-wrap {
+        width: 100%;
+    }
+    .ap-box-rating>ul {
+        text-align: center;
+    }
+    .slider-wrap .slide-wrap-controls a.slider-wrap-next {
+        right: -72px;
+    }
+    .slider-wrap .slide-wrap-controls a.slider-wrap-prev {
+        left: -36px;
+    }
+    .ap-box .ap-box-title h4 {
+        font-size: 15px;
+    }
+    .pricing-col-box .pricing-box .price-list ul {
+        padding-left: 10px;
+    }
+    .pricing-col-box .pricing-box .total-month {
+        padding: 20px 5px;
+    }
+    .top-header .logo-text {
+        position: relative;
+    }
+    .become-pm {
+        position: relative;
+    }
+    .top-header .navbar-nav {
+        margin-top: 0;
+    }
+    ul.navbar-nav li {
+        padding: 15px;
+    }
+    .top-header ul.navbar-nav li.icon {
+        border-left: 0;
+    }
+    .top-header .bg-dark {
+        padding: 0 15px;
+    }
+    .payment_paypal .card .card-header .card-title {
+        font-size: 15px;
+    }
+    .steps-pay p {
+        font-size: 14px;
+    }
+    .steps-pay {
+        margin-bottom: 10px;
+    }
+    .custom_checkbox .checkmark {
+        top: 0 !important;
+    }
+    .custom_checkbox {
+        font-size: 16px;
+    }
+    .credit-card-info label {
+        font-size: 15px;
+    }
+    form.credit-card-info ::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    ul.list-unstyled.last-date li:first-child {
+        width: 43%;
+    }
+    ul.list-unstyled.last-date li {
+        width: 28%;
+    }
+    ul.list-unstyled.last-date li select {
+        padding: 4px;
+    }
+    .payment_inner {
+        padding: 20px 16px;
+    }
+    .dolor_box {
+        margin: 0 auto;
+    }
+    .heading-payment,
+    .member_list,
+    .duration-month {
+        text-align: center;
+    }
+    .find-content h3 {
+        font-size: 28px;
+        margin: 30px 0;
+    }
+    .find-content p {
+        font-size: 15px;
+    }
+    .user-list.select-list .media {
+        flex-direction: column;
+    }
+    .user-list.select-list .media img.mr-3 {
+        margin-right: 0!important;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+    .user-list.select-list .media .media-body {
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+    .row.user-info p i.fa-map-marker {
+        font-size: 25px;
+    }
+    .row.user-info p i {
+        font-size: 18px;
+    }
+    .card.group-list .card-body {
+        padding: 20px 15px !important;
+    }
+    .row.user-info p {
+        font-size: 15px;
+    }
+    .tab-user {
+        width: 84.9%;
+    }
+    .card.group-list .card-img-top span {
+        left: 25px;
+        font-size: 17px;
+    }
+    span.img-5 {
+        left: 37px !important;
+    }
+    .card.group-list .card-img-top i+span {
+        left: 7px;
+        top: 5px;
+        font-size: 15px;
+    }
+    .card.group-list .card-img-top span.position-relative {
+        left: 77%;
+    }
+    .card.group-list .card-img-top i {
+        font-size: 30px;
+    }
+    .img-user span:first-child {
+        font-size: 17px;
+    }
+    .img-user {
+        left: 15px;
+    }
+    .alisa {
+        width: 100%;
+    }
+    span.hii {
+        right: 60px;
+    }
+
+    .tab-user .card {
+        padding: 0 15px;
+    }
+    .send-message.float-right .btn {
+        margin-left: 14%;
+    }
+    .banner-bg {
+        background-size: initial;
+    }
+}/* End @media (max-width:991px) and (min-width:768px) */
+
+@media (max-width:1199px) and (min-width:992px) {
+    .smily-comment span,
+    .layer .smily-comment span {
+        margin-right: 5px;
+    }
+    .ethnic-group ul {
+        width: 100%;
+        text-align: center;
+    }
+    .recovered .find-img {
+        width: 200px;
+        height: 200px;
+    }
+    .recovered .find-img img {
+        width: 94px;
+    }
+    .your-religion ul {
+        text-align: center;
+    }
+    .ap-box-rating>ul>li {
+        margin-right: 41px!important;
+    }
+    .ap-box-rating ul li::before {
+        width: 55px;
+        left: -49px;
+    }
+    .slider-wrap {
+        width: 100%;
+    }
+    .slider-wrap .slide-wrap-controls a.slider-wrap-next {
+        right: -60px;
+    }
+    .slider-wrap .slide-wrap-controls a.slider-wrap-prev {
+        left: -30px;
+    }
+    .credit-card-info label {
+        font-size: 17px;
+    }
+    form.credit-card-info ::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+    .heading-payment h1 {
+        font-size: 21px;
+    }
+    .payment_inner {
+        padding: 20px;
+    }
+    ul.list-unstyled.member_list li i {
+        padding-right: 7px;
+    }
+    ul.list-unstyled.member_list li {
+        font-size: 12px;
+    }
+    .duration-month p {
+        padding: 10px 5px;
+    }
+    .user-list.select-list .media img.mr-3 {
+        margin-right: 20px!important;
+    }
+    .send-message .btn,
+    .btn-light:not(:disabled):not(.disabled):active {
+        padding: 10px;
+    }
+    span.hii {
+        right: 74px;
+    }
+}
+
+
+
+/* End @media (max-width:1199px) and (min-width:992px) */
+
+@media (min-width: 320px) and (max-width: 414px) {
+    .listen-music>ul>li,
+    .like-playing>ul>li,
+    .like-watching>ul>li,
+    .match_age>ul>li,
+    .match-member>ul>li,
+    .contine-btn button.btn-continue,
+    .its_ok_match_member>ul>li,
+    .match-religion>ul>li,
+    .match-education>ul>li,
+    .match-income>ul>li,
+    .drinkin-level>ul>li,
+    .smoking-level>ul>li,
+    .culture>ul>li,
+    .culture-origin>ul>li,
+    .language_prefer>ul>li,
+    .state-match>ul>li,
+    .country-match>ul>li {
+        width: 100%;
+    }
+    .cultural-roots ul li .form-group select,
+    .langugae-speak ul li .form-group select,
+    .cultural-roots ul li .form-group input {
+        width: 100%;
+    }
+    .cultural-roots>ul>li.list-inline-item {
+        display: block;
+    }
+}
